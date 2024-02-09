@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  height: 100vh;
+  background: black;
+}
+
+span{
+  background: url("https://cdn3.iconfinder.com/data/icons/emoji-1-4/64/_heart_sexy_love-256.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  pointer-events: none;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0%{
+    transform: translate(-50%, -50%);
+    opacity: 5;
+    filter: hue-rotate(0);
+  }
+  100%{
+    transform: translate(-50%, -2500%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+} 
